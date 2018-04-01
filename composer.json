@@ -1,0 +1,28 @@
+{
+    "name": "andrewnovikof/phonefinder",
+    "description": "PHP library for searching phones from a some string",
+    "license": "MIT",
+    "authors": [{
+        "name": "AndrewNovikof",
+        "email": "andrewnovikofff@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "PhoneFinder\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/src/meta/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhoneFinder\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    }
+}
