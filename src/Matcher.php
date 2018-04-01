@@ -42,7 +42,7 @@ class Matcher
             $numbers[$key] = preg_replace('/-/', '',
                 preg_replace('/^\\d{1}/', $this->meta['defaultCountryCode'], $number));
         }
-        return $numbers;
+        return array_unique($numbers);
     }
 
     /**
